@@ -46,7 +46,7 @@ function QuestionList({questions, setQuestions}) {
     fetch(`${url1}${id}`,{
       method: "PATCH",
       headers:{
-        "Content-Type":"application/",
+        "Content-Type":"application/json",
       },
       body: JSON.stringify({correctIndex})
     })
